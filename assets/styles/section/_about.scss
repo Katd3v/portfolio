@@ -1,0 +1,22 @@
+#about {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  
+  .photo {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .about-me {
+    margin-top: 10px;
+
+    p {
+      margin-top: 5px;
+      line-height: 1.2;
+    }
+  }
+}

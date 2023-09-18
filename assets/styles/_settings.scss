@@ -1,0 +1,26 @@
+$color-1: #DDD0C8;
+$color-2: #323232;
+$white: #ffffff; 
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color-1;
+  color: $color-2;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $color-2;
+}

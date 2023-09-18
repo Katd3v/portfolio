@@ -1,0 +1,22 @@
+header {
+  margin: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  } 
+
+  ul {
+    display: flex;
+
+
+    a {
+      margin-right: 5px;
+      font-size: 10px;
+    }
+  }
+}

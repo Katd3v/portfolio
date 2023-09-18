@@ -1,3 +1,4 @@
-@use "./settings";
-@use "./layout/header";
-@use "./section/about";
+@import "./settings";
+@import "./layout/header";
+@import "./section/about";
+@import "./section/contact";

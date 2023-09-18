@@ -7,7 +7,7 @@
 
 body {
   background-color: #DDD0C8;
-  color: #323232;
+  color: #301004;
   font-family: sans-serif;
 }
 
@@ -19,7 +19,11 @@ ul {
 
 a {
   text-decoration: none;
-  color: #323232;
+  color: #301004;
+}
+
+main {
+  margin: 10px 20px;
 }
 
 header {
@@ -34,17 +38,87 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 768px) {
+  header {
+    margin: 30px 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header {
+    margin: 30px 50px;
+  }
+}
 header .logo {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+}
+@media screen and (min-width: 768px) {
+  header .logo {
+    width: 60px;
+    height: 60px;
+  }
 }
 header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
+header ul li {
+  padding: 5px;
+}
+@media screen and (min-width: 1024px) {
+  header ul li {
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  header ul li:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: -webkit-transform 0.2s ease;
+    transition: -webkit-transform 0.2s ease;
+    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+    background-color: rgba(255, 255, 255, 0.4901960784);
+    -webkit-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease;
+    border-radius: 5px;
+  }
+}
 header ul a {
-  margin-right: 5px;
   font-size: 10px;
+  cursor: default;
+}
+@media screen and (min-width: 768px) {
+  header ul a {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header ul a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+#about .photo {
+  width: 100%;
+}
+#about .photo img {
+  width: 100%;
+}
+#about .about-me {
+  margin-top: 10px;
+}
+#about .about-me p {
+  margin-top: 5px;
+  font-size: 12px;
+  line-height: 1.2;
 }/*# sourceMappingURL=index.css.map */

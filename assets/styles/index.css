@@ -24,7 +24,7 @@ a {
 }
 
 main {
-  margin: 10px 20px;
+  margin: 10px 0;
 }
 
 header {
@@ -100,6 +100,29 @@ header ul a {
   header ul a {
     font-size: 18px;
   }
+}
+
+#home {
+  width: 100%;
+  height: 280px;
+  padding: 0 20px;
+}
+#home .gradient-bg {
+  background: -webkit-gradient(linear, left top, left bottom, from(#301004), to(rgba(48, 16, 4, 0.5764705882)));
+  background: linear-gradient(to bottom, #301004, rgba(48, 16, 4, 0.5764705882));
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#home .text-animation {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 2;
 }
 
 @media screen and (min-width: 768px) {

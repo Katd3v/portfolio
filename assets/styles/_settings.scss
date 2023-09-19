@@ -9,9 +9,8 @@ $white: #ffffff;
 }
 
 body {
-  background-color: $color-1;
   color: $color-2;
-  font-family: sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 14px;
 }
 
@@ -26,6 +25,3 @@ a {
   color: $color-2;
 }
 
-main {
-  margin: 10px 0;
-}

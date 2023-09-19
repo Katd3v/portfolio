@@ -6,9 +6,8 @@
 }
 
 body {
-  background-color: #DDD0C8;
   color: #301004;
-  font-family: sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 14px;
 }
 
@@ -23,12 +22,9 @@ a {
   color: #301004;
 }
 
-main {
-  margin: 10px 0;
-}
-
 header {
-  margin: 10px 10px;
+  background-color: #DDD0C8;
+  padding: 12px 4px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,7 +62,7 @@ header ul {
   display: flex;
 }
 header ul li {
-  padding: 5px;
+  padding: 4px;
 }
 @media screen and (min-width: 1024px) {
   header ul li {
@@ -88,7 +84,7 @@ header ul li {
   }
 }
 header ul a {
-  font-size: 10px;
+  font-size: 11px;
   cursor: default;
 }
 @media screen and (min-width: 768px) {
@@ -106,12 +102,8 @@ header ul a {
   width: 100%;
   height: 280px;
   padding: 0 20px;
-}
-#home .gradient-bg {
   background: -webkit-gradient(linear, left top, left bottom, from(#301004), to(rgba(48, 16, 4, 0.5764705882)));
   background: linear-gradient(to bottom, #301004, rgba(48, 16, 4, 0.5764705882));
-  width: auto;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,12 +111,15 @@ header ul a {
       -ms-flex-align: center;
           align-items: center;
 }
-#home .text-animation {
+#home h1 {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 28px;
   line-height: 2;
 }
 
+#about {
+  background-color: #DDD0C8;
+}
 @media screen and (min-width: 768px) {
   #about {
     display: -webkit-box;
@@ -139,15 +134,16 @@ header ul a {
   width: 100%;
 }
 #about .about-me {
-  margin-top: 10px;
+  padding: 10px 20px;
 }
 #about .about-me p {
-  margin-top: 5px;
-  line-height: 1.2;
+  margin-top: 10px;
+  line-height: 1.4;
 }
 
 #contact {
-  margin-top: 15px;
+  padding: 15px 20px;
+  background-color: #DDD0C8;
 }
 #contact form {
   margin: 5px 10px;

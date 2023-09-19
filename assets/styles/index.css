@@ -144,6 +144,42 @@ header ul a {
   color: #ffffff;
 }
 
+#skills {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #301004;
+}
+#skills h2 {
+  color: #ffffff;
+}
+#skills .button-stack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#skills .button-stack button {
+  width: 100px;
+}
+#skills .hard-skills {
+  margin: 12px 0;
+  padding: 20px;
+  background: #a7867c;
+  border-radius: 10px;
+}
+#skills ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+#skills ul img {
+  height: 50px;
+}
+
 #contact {
   padding: 15px 20px;
   background-color: #DDD0C8;

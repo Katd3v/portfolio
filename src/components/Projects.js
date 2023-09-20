@@ -8,6 +8,12 @@ export const Projects = () => {
       alt: "aperçu du site booki",
       github: "https://katd3v.github.io/booki-starter-code/",
     },
+    {
+      preview: "/assets/img/booki-preview.png",
+      url: "",
+      alt: "aperçu du site de Sophie Bluel",
+      github: "https://github.com/Katd3v/Portfolio-architecte-sophie-bluel.git",
+    },
   ];
 
   return <div>Projects</div>;

@@ -25,7 +25,7 @@ const About = () => {
   ];
 
   return (
-    <section className="bg-primary">
+    <section id="about" className="bg-primary">
       <div>
         <img
           src="/assets/img/profil.png"

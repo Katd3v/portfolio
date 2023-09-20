@@ -9,12 +9,12 @@ const About = () => {
     { url: "js-logo.png", alt: "logo JAVASCRIPT" },
   ];
 
-  const framworks = [
+  const frameworks = [
     { url: "react-logo.png", alt: "logo REACT" },
     { url: "sass-logo.png", alt: "logo SASS" },
-    { url: "tailwind-logo.png", alt: "logo TAILWIND" },
     { url: "node-logo.png", alt: "logo NODE" },
     { url: "express-logo.png", alt: "logo EXPRESS" },
+    { url: "tailwind-logo.png", alt: "logo TAILWIND" },
   ];
 
   const tools = [
@@ -34,8 +34,8 @@ const About = () => {
       </div>
       <div className="p-4">
         <div>
-          <h2 className="text-2xl font-black">À propos de moi</h2>
-          <p>
+          <h2>À propos de moi</h2>
+          <p className="py-4">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
             iure possimus qui illo commodi eligendi repellat itaque. Assumenda
             ipsa nostrum quibusdam magnam, quidem vel consectetur quos dolores
@@ -43,17 +43,16 @@ const About = () => {
           </p>
         </div>
         <div>
-          <h2>Mes compétences</h2>
           <div>
-            <div>
+            <div className="bg-bgBrown my-4 py-2 rounded-lg">
               <h3>Langages</h3>
               <Skills skills={languages} />
             </div>
-            <div>
-              <h3>Framworks</h3>
-              <Skills skills={framworks} />
+            <div className="bg-bgBrown my-4 py-2 rounded-lg">
+              <h3>Frameworks</h3>
+              <Skills skills={frameworks} />
             </div>
-            <div>
+            <div className="bg-bgBrown my-4 py-2 rounded-lg">
               <h3>Outils</h3>
               <Skills skills={tools} />
             </div>

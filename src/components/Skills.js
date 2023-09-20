@@ -3,7 +3,7 @@ import React from "react";
 const Skills = ({ skills }) => {
   return (
     <div>
-      <ul className="flex">
+      <ul className="flex flex-wrap justify-evenly">
         {skills.map((skill) => (
           <li>
             <img

@@ -1,5 +1,4 @@
 import React from "react";
-import Languages from "./Skills";
 import Skills from "./Skills";
 
 const About = () => {

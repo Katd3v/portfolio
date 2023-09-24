@@ -1,7 +1,7 @@
 import "./App.css";
 import { Layout } from "./layout/Layout";
-import Hero from "./components/Hero";
-import About from "./components/About";
+import Hero from "./sections/Hero";
+import About from "./sections/About";
 import Contact from "./components/Contact";
 import { Projects } from "./components/Projects";
 

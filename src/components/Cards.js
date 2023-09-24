@@ -5,7 +5,7 @@ export const Cards = ({ project }) => {
     <div>
       <figure className="p-4">
         <img src={project.preview} alt={project.alt} />
-        <h3>{project.title}</h3>
+        <h3 className="text-secondary">{project.title}</h3>
         <a href={project.github}>
           <img
             className="h-8"

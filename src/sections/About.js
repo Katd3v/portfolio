@@ -1,5 +1,6 @@
 import React from "react";
-import Skills from "./Skills";
+import Skills from "../components/Skills";
+import Profil from "../components/Profil";
 
 const About = () => {
   const languages = [
@@ -25,22 +26,8 @@ const About = () => {
 
   return (
     <section id="about" className="bg-primary">
-      <div>
-        <img
-          src="/assets/img/profil.png"
-          alt="Photo de profil de Katleen SORHAINDO"
-        />
-      </div>
       <div className="p-4">
-        <div>
-          <h2>À propos de moi</h2>
-          <p className="py-4">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
-            iure possimus qui illo commodi eligendi repellat itaque. Assumenda
-            ipsa nostrum quibusdam magnam, quidem vel consectetur quos dolores
-            consequuntur cumque inventore.
-          </p>
-        </div>
+        <Profil />
         <div>
           <div>
             <div className="bg-bgBrown my-4 py-2 rounded-lg">

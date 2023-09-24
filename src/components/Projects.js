@@ -31,8 +31,8 @@ export const Projects = () => {
   return (
     <section id="projects">
       <div>
-        {projects.map((project) => (
-          <Cards key={project.id} project={project} />
+        {projects.map((project, index) => (
+          <Cards key={index} project={project} />
         ))}
       </div>
     </section>

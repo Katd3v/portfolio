@@ -4,8 +4,8 @@ const Skills = ({ skills }) => {
   return (
     <div>
       <ul className="flex flex-wrap justify-evenly">
-        {skills.map((skill) => (
-          <li>
+        {skills.map((skill, index) => (
+          <li key={index}>
             <img
               className="h-20"
               src={`/assets/img/${skill.url}`}

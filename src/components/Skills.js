@@ -6,11 +6,7 @@ const Skills = ({ skills }) => {
       <ul className="flex flex-wrap justify-evenly">
         {skills.map((skill, index) => (
           <li key={index}>
-            <img
-              className="h-20"
-              src={`/assets/img/${skill.url}`}
-              alt={skill.alt}
-            />
+            <img className="h-20" src={skill.imageUrl} alt={skill.title} />
           </li>
         ))}
       </ul>

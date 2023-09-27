@@ -10,7 +10,7 @@ export const Profil = () => {
       />
       <h2>À propos de moi</h2>
       <p className="py-4">
-        Après une décennie passée à travailler dans une administration privé,
+        Après une décennie passée à travailler dans une administration public,
         j'ai acquis de nombreuses compétences essentielles en gestion, en
         communication, en résolution de problèmes, et en formation d'équipes.
       </p>

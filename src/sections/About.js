@@ -4,11 +4,7 @@ import Skills from "../components/Skills";
 import Profil from "../components/Profil";
 
 const About = () => {
-  const [skills, setSkills] = useState({
-    languages: [],
-    frameworks: [],
-    tools: [],
-  });
+  const [skills, setSkills] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -37,18 +33,12 @@ const About = () => {
             <div>Chargement en cours...</div>
           ) : (
             <div>
-              <div>
-                <h3>{skills.languages.category}</h3>
-                <Skills skills={skills.languages} />
-              </div>
-              <div>
-                <h3>{skills.frameworks.category}</h3>
-                <Skills skills={skills.frameworks} />
-              </div>
-              <div>
-                <h3>{skills.tools.category}</h3>
-                <Skills skills={skills.tools} />
-              </div>
+              {skills.map((skill, index) => (
+                <div key={index}>
+                  <h3>{skill[0].category}</h3>
+                  <Skills skills={skill} />
+                </div>
+              ))}
             </div>
           )}
         </div>

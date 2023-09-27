@@ -9,7 +9,6 @@ const Hero = () => {
 
   return (
     <section
-      id="hero"
       className="h-72 flex justify-center items-center"
       style={heroStyle}
     >

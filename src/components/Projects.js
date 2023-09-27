@@ -7,7 +7,7 @@ export const Projects = () => {
       preview: "/assets/img/booki-preview.png",
       url: "https://katd3v.github.io/booki-starter-code/",
       alt: "aperçu du site booki",
-      github: "https://katd3v.github.io/booki-starter-code/",
+      github: "https://github.com/Katd3v/booki-starter-code.git",
       title: "Booki",
       skills: [
         { url: "html-logo.png", alt: "logo HTML" },

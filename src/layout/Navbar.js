@@ -1,9 +1,10 @@
 import React from "react";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Navbar = () => {
   return (
     <header className="flex flex-col md:flex-row items-center bg-primary py-4">
-      <a href="#hero">
+      <a href="#">
         <img
           className="w-32 md:w-64 rounded-full"
           src="/logo.jpeg"
@@ -13,16 +14,16 @@ const Navbar = () => {
       <nav className="w-full mt-4">
         <ul className="flex justify-evenly">
           <li>
-            <a href="#hero">Accueil</a>
+            <Link to="/#">Accueil</Link>
           </li>
           <li>
-            <a href="#about">À Propos</a>
+            <Link to="/#about">À Propos</Link>
           </li>
           <li>
-            <a href="#projects">Projets</a>
+            <Link to="/#projects">Projets</Link>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <Link to="/#contact">Contact</Link>
           </li>
         </ul>
       </nav>

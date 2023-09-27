@@ -5,8 +5,8 @@ import About from "../sections/About";
 export const Home = () => {
   return (
     <>
-      <Hero id="hero" />
-      <About id="about" />
+      <Hero />
+      <About />
     </>
   );
 };

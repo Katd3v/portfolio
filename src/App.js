@@ -1,18 +1,18 @@
+import React from "react";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
 import { Layout } from "./layout/Layout";
-import Hero from "./sections/Hero";
-import About from "./sections/About";
-import Contact from "./components/Contact";
-import { Projects } from "./components/Projects";
+import { Home } from "./pages/Home";
 
 function App() {
   return (
-    <Layout>
-      <Hero />
-      <About />
-      <Projects />
-      <Contact />
-    </Layout>
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   );
 }
 

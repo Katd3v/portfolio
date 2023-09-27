@@ -8,10 +8,7 @@ const About = () => {
     <section id="about" className="bg-primary">
       <div className="p-4">
         <Profil />
-        <div>
-          <h2 id="skills">Mes compétences</h2>
-          <></>
-        </div>
+        <div></div>
       </div>
     </section>
   );

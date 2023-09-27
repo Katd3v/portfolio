@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <header className="flex flex-col md:flex-row items-center bg-primary py-4">
-      <a href="#home">
+      <a href="#hero">
         <img
           className="w-32 md:w-64 rounded-full"
           src="/logo.jpeg"
@@ -13,7 +13,7 @@ const Navbar = () => {
       <nav className="w-full mt-4">
         <ul className="flex justify-evenly">
           <li>
-            <a href="#home">Accueil</a>
+            <a href="#hero">Accueil</a>
           </li>
           <li>
             <a href="#about">À Propos</a>
@@ -21,9 +21,6 @@ const Navbar = () => {
           <li>
             <a href="#projects">Projets</a>
           </li>
-          {/* <li>
-            <a href="#skills">Compétences</a>
-          </li> */}
           <li>
             <a href="#contact">Contact</a>
           </li>

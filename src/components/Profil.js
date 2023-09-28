@@ -6,7 +6,7 @@ export const Profil = () => {
       <img
         className="rounded-full my-4"
         src="/assets/img/profil.png"
-        alt="Photo de profil de Katleen SORHAINDO"
+        alt="profil de Katleen SORHAINDO"
       />
       <h2>À propos de moi</h2>
       <p className="py-4">

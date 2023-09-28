@@ -4,7 +4,7 @@ import { HashLink as Link } from "react-router-hash-link";
 const Navbar = () => {
   return (
     <header className="flex flex-col md:flex-row items-center bg-primary py-4">
-      <a href="#">
+      <a href="/">
         <img
           className="w-32 md:w-64 rounded-full"
           src="/logo.jpeg"

@@ -23,14 +23,14 @@ export const Projects = () => {
   }, []);
 
   return (
-    <div>
-      <h2>Mes projets</h2>
+    <div className="m-4">
+      <h2 className="my-4">Mes projets</h2>
       {loading ? (
         <div>Chargement en cours </div>
       ) : (
-        <div>
-          {projects.map((project) => (
-            <Cards project={project} />
+        <div className="flex flex-wrap justify-evenly">
+          {projects.map((project, index) => (
+            <Cards key={index} project={project} />
           ))}
         </div>
       )}

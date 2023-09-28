@@ -24,7 +24,7 @@ export const Footer = () => {
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="/">
               <img
                 className="h-12"
                 src="/assets/img/linkedin-logo.png"

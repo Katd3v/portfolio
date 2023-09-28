@@ -35,7 +35,7 @@ const About = () => {
             <div>
               {skills.map((skill, index) => (
                 <div key={index}>
-                  <h3>{skill[0].category}</h3>
+                  <h3>{skill[0]?.category}</h3>
                   <Skills skills={skill} />
                 </div>
               ))}

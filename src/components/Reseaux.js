@@ -2,7 +2,7 @@ import React from "react";
 
 export const Reseaux = () => {
   return (
-    <ul className="flex">
+    <ul className="flex justify-around w-40">
       <li>
         <a href="/#contact">
           <img

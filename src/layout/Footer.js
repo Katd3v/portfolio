@@ -3,7 +3,7 @@ import Reseau from "../components/Reseaux";
 
 export const Footer = () => {
   return (
-    <footer className="bg-secondary">
+    <footer className="bg-bgBrown">
       <Reseau />
       <p>© 2023 Katleen SORHAINDO, Tous droits réservés.</p>
     </footer>

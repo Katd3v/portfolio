@@ -23,7 +23,7 @@ export const Projects = () => {
   }, []);
 
   return (
-    <div className="m-4">
+    <section id="projets" className="m-4">
       <h2 className="my-4">Mes projets</h2>
       {loading ? (
         <div>Chargement en cours </div>
@@ -34,7 +34,7 @@ export const Projects = () => {
           ))}
         </div>
       )}
-    </div>
+    </section>
   );
 };
 

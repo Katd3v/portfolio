@@ -24,7 +24,7 @@ const About = () => {
   }, []);
 
   return (
-    <section id="about" className="bg-primary">
+    <section id="a-propos" className="bg-primary">
       <div className="p-4">
         <Profil />
         <div>

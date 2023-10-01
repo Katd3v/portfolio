@@ -23,12 +23,12 @@ export const Projects = () => {
   }, []);
 
   return (
-    <section id="projets" className="m-4">
-      <h2 className="my-4">Mes projets</h2>
+    <section id="projets" className="bg-secondary py-8">
+      <h2 className="my-4 text-white text-center">Mes projets</h2>
       {loading ? (
         <div>Chargement en cours </div>
       ) : (
-        <div className="flex flex-wrap justify-evenly">
+        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {projects.map((project, index) => (
             <Cards key={index} project={project} />
           ))}

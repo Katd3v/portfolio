@@ -23,8 +23,8 @@ export const Projects = () => {
   }, []);
 
   return (
-    <section id="projets" className="bg-secondary py-8">
-      <h2 className="my-4 text-white text-center">Mes projets</h2>
+    <section id="projets" className="bg-white py-8">
+      <h2 className="my-4 text-secondary text-center">Mes projets</h2>
       {loading ? (
         <div>Chargement en cours </div>
       ) : (

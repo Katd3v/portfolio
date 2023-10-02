@@ -1,10 +1,9 @@
 import React from "react";
-// import Skills from "./Skills";
 
-export const Cards = ({ project, skill }) => {
+export const Cards = ({ project }) => {
   return (
     <div className="mx-auto max-w-7xl px-6 lg:px-8">
-      <article className="flex flex-col items-start justify-between bg-white rounded-2xl">
+      <article className="flex flex-col items-start justify-between bg-white rounded-2xl shadow-sm shadow-primary">
         <div className="relative w-full">
           <img
             src={project.imageUrl}
@@ -40,7 +39,13 @@ export const Cards = ({ project, skill }) => {
                 className="h-6 w-6 bg-gray-100"
               />
             </a>
-            <div className="text-sm leading-6"></div>
+            <div className="text-sm leading-6">
+              <ul>
+                {project.languages.map((language, index) => (
+                  <li key={index}>{language}</li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </article>

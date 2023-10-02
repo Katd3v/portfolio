@@ -1,6 +1,5 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-import Reseaux from "../components/Reseaux";
 
 const Hero = () => {
   const heroStyle = {
@@ -33,7 +32,6 @@ const Hero = () => {
           />
         </span>
       </h1>
-      <Reseaux />
     </section>
   );
 };

@@ -27,15 +27,15 @@ const About = () => {
     <section id="a-propos" className="bg-primary pt-10">
       <div className="lg:mt-0 xl:col-end-1 xl:row-start-1">
         <Profil />
-        <div className="my-4 bg-secondary">
-          <h2 className="text-white mb-8 ml-4">Mes compétences</h2>
+        <div className="my-4 bg-gradient-to-b from-primary to-secondary">
+          <h2 className="text-secondary mb-8 ml-4">Mes compétences</h2>
           {loading ? (
             <div>Chargement en cours...</div>
           ) : (
-            <div className="lg:flex justify-around">
+            <div className="lg:flex justify-around pb-4">
               {skills.map((skill, index) => (
                 <div
-                  className="rounded-2xl shadow-sm shadow-white bg-primary mb-4 w-96"
+                  className="rounded-2xl shadow-sm shadow-secondary bg-white pb-2 w-96"
                   key={index}
                 >
                   <h3 className="text-2xl text-center text-secondary mb-4 underline">

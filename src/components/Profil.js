@@ -2,25 +2,34 @@ import React from "react";
 
 export const Profil = () => {
   return (
-    <>
+    <div className="xl:flex">
       <img
-        className="rounded-full my-4"
+        className="m-4 aspect-[6/5] max-w-sm rounded-2xl object-cover"
         src="/assets/img/profil.png"
         alt="profil de Katleen SORHAINDO"
       />
-      <h2>À propos de moi</h2>
-      <p className="py-4">
-        Après une décennie passée à travailler dans une administration public,
-        j'ai acquis de nombreuses compétences essentielles en gestion, en
-        communication, en résolution de problèmes, et en formation d'équipes.
-      </p>
-      <p>
-        Ma décision de me tourner vers le développement web découle de ma
-        passion pour la technologie et la création. J'ai investi du temps et de
-        l'énergie pour acquérir des compétences techniques en développement
-        front-end et back-end, ainsi qu'en conception web.
-      </p>
-    </>
+      <div className="mx-8">
+        <h2 className="text-secondary m-8">Qui suis-je ?</h2>
+        <div className="flex flex-col">
+          <p className="">
+            En tant que développeur web en reconversion professionnelle, je
+            combine une solide expérience dans le service client, la gestion,
+            l'investigation et la résolution de problèmes.
+          </p>
+          <p className="my-4">
+            Ma décision de me tourner vers le développement web découle de ma
+            passion pour la technologie et la création. J'ai investi du temps et
+            de l'énergie pour acquérir des compétences techniques en
+            développement front-end et back-end, ainsi qu'en conception web.
+          </p>
+          <p>
+            Je vous invite à explorer mon site pour découvrir de manière
+            concrète les compétences que j'ai acquises et les projets
+            passionnants que je peux réaliser.
+          </p>
+        </div>
+      </div>
+    </div>
   );
 };
 

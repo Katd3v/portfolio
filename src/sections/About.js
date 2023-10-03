@@ -24,8 +24,8 @@ const About = () => {
   }, []);
 
   return (
-    <section id="a-propos" className="bg-primary">
-      <div className="p-4">
+    <section id="a-propos" className="bg-primary py-10">
+      <div className="lg:mt-0 xl:col-end-1 xl:row-start-1">
         <Profil />
         <div>
           <h2>Mes compétences</h2>

@@ -8,7 +8,7 @@ export const Cards = ({ project }) => {
           <img
             src={project.imageUrl}
             alt={`miniature représentant le projet ${project.title}`}
-            className="absolute inset-0 h-full w-full rounded-2xl object- shadow-sm shadow-secondary hover:scale-125 transform transition-transform duration-500"
+            className="absolute inset-0 h-full w-full rounded-2xl shadow-sm shadow-secondary hover:scale-125 transform transition-transform duration-500"
           />
         </a>
       </div>

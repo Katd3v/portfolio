@@ -25,7 +25,7 @@ export const Profil = () => {
           <p>
             Je vous invite à explorer mon site pour découvrir de manière
             concrète les compétences que j'ai acquises et les projets
-            passionnants que je peux réaliser.
+            passionnants que j'ai réalisé.
           </p>
         </div>
       </div>

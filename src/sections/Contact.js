@@ -323,7 +323,6 @@ export default function Contact() {
                       required
                       className="block w-full rounded-md border-primary px-4 py-3 text-gray-900 shadow-sm shadow-primary focus:border-secondary focus:ring-secondary"
                       aria-describedby="message-max"
-                      defaultValue={""}
                     />
                   </div>
                 </div>

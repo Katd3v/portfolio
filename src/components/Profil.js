@@ -23,8 +23,8 @@ export const Profil = () => {
             développement front-end et back-end, ainsi qu'en conception web.
           </p>
           <p>
-            Je vous invite à explorer mon site pour découvrir de manière
-            concrète les compétences que j'ai acquises et les projets
+            Je vous invite à continer d'explorer mon site pour découvrir de
+            manière concrète les compétences que j'ai acquises et les projets
             passionnants que j'ai réalisé.
           </p>
         </div>

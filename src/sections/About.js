@@ -27,8 +27,8 @@ const About = () => {
     <section id="a-propos" className="bg-primary pt-10">
       <div className="lg:mt-0 xl:col-end-1 xl:row-start-1">
         <Profil />
-        <div className="my-4 bg-gradient-to-b from-primary to-secondary">
-          <h2 className="text-secondary mb-8 ml-4">Mes compétences</h2>
+        <div className="my-4 bg-primary">
+          <h3 className="text-left text-secondary ml-4">Mes compétences</h3>
           {loading ? (
             <div>Chargement en cours...</div>
           ) : (
@@ -38,9 +38,9 @@ const About = () => {
                   className="rounded-2xl shadow-sm shadow-secondary bg-white pb-2 w-96"
                   key={index}
                 >
-                  <h3 className="text-2xl text-center text-secondary mb-4 underline">
+                  <h4 className="text-2xl text-center text-secondary mb-4 underline">
                     {skill[0]?.category}
-                  </h3>
+                  </h4>
                   <Skills skills={skill} />
                 </div>
               ))}

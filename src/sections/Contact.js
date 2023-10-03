@@ -146,8 +146,12 @@ export default function Contact() {
               </div>
               <h3 className="text-2xl font-medium text-white">Contactez-moi</h3>
               <p className="mt-6 max-w-3xl text-base text-primary">
-                Nullam risus blandit ac aliquam justo ipsum. Quam mauris
-                volutpat massa dictumst amet. Sapien tortor lacus arcu.
+                Je suis ouverte aux opportunités de collaboration et de projet.{" "}
+                <br />
+                Si vous partagez une vision créative, que vous avez une idée à
+                développer ou que vous recherchez une partenaire pour un projet
+                passionnant, je serais ravie d'en discuter.
+                <br /> N'hésitez pas à me contacter!
               </p>
               <dl className="mt-8 space-y-6">
                 <dt>

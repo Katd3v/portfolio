@@ -32,7 +32,7 @@ const About = () => {
           {loading ? (
             <div>Chargement en cours...</div>
           ) : (
-            <div className="flex justify-around">
+            <div className="lg:flex justify-around">
               {skills.map((skill, index) => (
                 <div
                   className="rounded-2xl shadow-sm shadow-white bg-primary mb-4 w-96"

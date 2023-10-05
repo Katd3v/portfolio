@@ -24,20 +24,17 @@ const About = () => {
   }, []);
 
   return (
-    <section id="about" className="bg-primary">
-      <div className="p-4">
+    <section id="a-propos" className="bg-primary pt-10">
+      <div className="lg:mt-0 xl:col-end-1 xl:row-start-1">
         <Profil />
-        <div>
-          <h2>Mes compétences</h2>
+        <div className="my-4 bg-primary">
+          <h3 className="text-left text-secondary ml-4">Mes compétences</h3>
           {loading ? (
             <div>Chargement en cours...</div>
           ) : (
-            <div>
+            <div className="px-4 my-4 flex flex-wrap items-start justify-around gap-x-8 gap-y-10 sm:gap-x-10 lg:mx-0">
               {skills.map((skill, index) => (
-                <div key={index}>
-                  <h3>{skill[0]?.category}</h3>
-                  <Skills skills={skill} />
-                </div>
+                <Skills key={index} skills={skill} />
               ))}
             </div>
           )}

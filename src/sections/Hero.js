@@ -9,10 +9,10 @@ const Hero = () => {
 
   return (
     <section
-      className="h-72 flex justify-center items-center"
+      className="h-72 flex flex-col justify-around items-center md:h-96"
       style={heroStyle}
     >
-      <h1 className="text-center text-3xl text-secondary">
+      <h1 className="text-center text-3xl text-secondary md:text-6xl">
         Bonjour, <br /> Je suis{" "}
         <span>
           <Typewriter

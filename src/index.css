@@ -8,6 +8,11 @@
   box-sizing: border-box;
 }
 
+body {
+  max-width: 1440px;
+  margin: auto;
+}
+
 h2 {
   font-size: 2.25rem; /* 36px */
   line-height: 2.5rem; /* 40px */
@@ -44,3 +49,4 @@ button[type=submit] {
   color: #ffffff;
   font-weight: 600;
 }
+

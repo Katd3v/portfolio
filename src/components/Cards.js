@@ -4,7 +4,7 @@ export const Cards = ({ project }) => {
   return (
     <article className="px-4 mx-auto max-w-2xl lg:max-w-5xl my-16 relative isolate flex flex-col gap-8 lg:flex-row lg:px-0">
       <div className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-80 lg:shrink-0 overflow-hidden rounded-2xl object- shadow-sm shadow-secondary ">
-        <a href={project.pageUrl} target="_blank" rel="noreferrer">
+        <a href={project.github} target="_blank" rel="noreferrer">
           <img
             src={project.imageUrl}
             alt={`miniature représentant le projet ${project.title}`}
@@ -30,13 +30,15 @@ export const Cards = ({ project }) => {
                 className="h-10 w-10 rounded-full bg-gray-50"
               />
             </a>
-            <a href={project.pageUrl} target="_blank" rel="noreferrer">
-              <img
-                src="/assets/img/website-logo.png"
-                alt="logo site internet qui amène vers le projet"
-                className="h-12 w-12 rounded-full bg-gray-50"
-              />
-            </a>
+            {project.pageUrl.length > 0 && (
+              <a href={project.pageUrl} target="_blank" rel="noreferrer">
+                <img
+                  src="/assets/img/website-logo.png"
+                  alt="logo site internet qui amène vers le projet"
+                  className="h-12 w-12 rounded-full bg-gray-50"
+                />
+              </a>
+            )}
           </div>
           <div>
             <div className="text-sm leading-6">

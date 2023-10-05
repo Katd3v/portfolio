@@ -12,20 +12,28 @@ export const Profil = () => {
         <h2 className="text-secondary m-8">Qui suis-je ?</h2>
         <div className="flex flex-col">
           <p className="">
-            En tant que développeur web en reconversion professionnelle, je
-            combine une solide expérience dans le service client, la gestion,
-            l'investigation et la résolution de problèmes.
+            Je suis un développeur web en reconversion professionnelle, ayant
+            récemment obtenu la certification professionnelle « Développeur
+            intégrateur web » de niveau 5 (bac +2). Cette transition réussie
+            s'est déroulée sur une période de six mois, grâce à une formation
+            intensive à l'école OpenClassrooms.
           </p>
           <p className="my-4">
-            Ma décision de me tourner vers le développement web découle de ma
-            passion pour la technologie et la création. J'ai investi du temps et
-            de l'énergie pour acquérir des compétences techniques en
-            développement front-end et back-end, ainsi qu'en conception web.
+            Mon parcours professionnel précédent m'a enseigné l'importance de la
+            rigueur, de l'efficacité et de la persévérance, des qualités que
+            j'ai pu transférer dans mon nouveau domaine. J'ai également
+            développé une forte capacité d'adaptation face aux défis, une
+            qualité que je considère essentielle dans le domaine du
+            développement web en constante évolution.
           </p>
           <p>
-            Je vous invite à continer d'explorer mon site pour découvrir de
-            manière concrète les compétences que j'ai acquises et les projets
-            passionnants que j'ai réalisé.
+            Ma décision de me lancer dans une carrière de développeur web
+            découle de ma passion pour la création, l'innovation technologique
+            et le désir constant d'apprendre et de relever de nouveaux défis.
+            Mes compétences en matière d'adaptation, de rigueur, associées à ma
+            passion pour la technologie, font de moi un candidat motivé et apte
+            à continuer d'apprendre et de contribuer de manière significative à
+            des projets futurs.
           </p>
         </div>
       </div>

@@ -3,7 +3,7 @@ import React from "react";
 export const Cards = ({ project }) => {
   return (
     <article className="px-4 mx-auto max-w-2xl lg:max-w-5xl my-16 relative isolate flex flex-col gap-8 lg:flex-row lg:px-0">
-      <div className="relative aspect-square w-full lg:w-80 lg:shrink-0 overflow-hidden rounded-2xl object- shadow-sm shadow-secondary ">
+      <div className="relative aspect-square w-full lg:w-80 lg:shrink-0 overflow-hidden rounded-2xl object- shadow-sm shadow-secondary">
         <a href={project.github} target="_blank" rel="noreferrer">
           <img
             src={project.imageUrl}

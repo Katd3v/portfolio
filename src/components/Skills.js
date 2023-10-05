@@ -2,14 +2,12 @@ import React from "react";
 
 const Skills = ({ skills }) => {
   return (
-    <ul className="mb-4">
-      <li>
-        <img
-          className="max-h-12 object-contain object-left"
-          src={skills.imageUrl}
-          alt={skills.title}
-        />
-      </li>
+    <ul className="flex flex-wrap justify-around">
+      {skills.map((skill, index) => (
+        <li key={index}>
+          <img className="h-16" src={skill.imageUrl} alt={skill.title} />
+        </li>
+      ))}
     </ul>
   );
 };

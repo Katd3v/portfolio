@@ -162,7 +162,12 @@ export default function Contact() {
                     className="h-6 w-6 flex-shrink-0"
                     aria-hidden="true"
                   />
-                  <span className="ml-3">katleen.portfolio@gmail.com</span>
+                  <span className="ml-3">
+                    <a href="mailto:katleen.portfolio@gmail.com">
+                      katleen.portfolio
+                      <span className="hidden md:inline">@gmail.com</span>
+                    </a>
+                  </span>
                 </dd>
                 <dd className="flex text-base text-primary">
                   <svg

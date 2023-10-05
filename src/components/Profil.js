@@ -2,13 +2,13 @@ import React from "react";
 
 export const Profil = () => {
   return (
-    <div className="xl:flex">
+    <div className="xl:flex px-4">
       <img
-        className="m-4 aspect-[6/5] max-w-sm rounded-2xl object-cover"
+        className="md:m-4 aspect-[6/5] rounded-2xl object-cover"
         src="/assets/img/profil.png"
         alt="profil de Katleen SORHAINDO"
       />
-      <div className="mx-8">
+      <div>
         <h2 className="text-secondary m-8">Qui suis-je ?</h2>
         <div className="flex flex-col">
           <p className="">

@@ -32,17 +32,9 @@ const About = () => {
           {loading ? (
             <div>Chargement en cours...</div>
           ) : (
-            <div className="lg:flex justify-around pb-4">
+            <div className="px-4 my-4 flex flex-wrap items-start justify-around gap-x-8 gap-y-10 sm:gap-x-10 lg:mx-0">
               {skills.map((skill, index) => (
-                <div
-                  className="rounded-2xl shadow-sm shadow-secondary bg-white pb-2 w-96"
-                  key={index}
-                >
-                  <h4 className="text-2xl text-center text-secondary mb-4 underline">
-                    {skill[0]?.category}
-                  </h4>
-                  <Skills skills={skill} />
-                </div>
+                <Skills key={index} skills={skill} />
               ))}
             </div>
           )}

@@ -40,36 +40,23 @@ export const Skill = () => {
   // };
 
   return (
-    <section id="skills" className=" bg-secondary py-10">
-      <h2 className=" text-white text-center ml-4">Mes compétences</h2>
+    <section id="skills" className=" bg-secondary py-10 px-4">
+      <h2 className=" text-white text-center mb-8">Mes compétences</h2>
       <p className="text-white">
         Durant ma formation intensive de 6 mois, je suis monté en compétence
         dans divers outils et technologies, me permettant de concevoir des sites
-        web optimisés et fonctionnels. Ces compétences et stacks technologiques
-        constituent une base solide pour un développeur web junior. Ils couvrent
-        à la fois les aspects de conception et de développement, ainsi que la
-        gestion de projet, ce qui me permettra de travailler efficacement sur
-        des projets web et de continuer à m'améliorer dans le domaine du
-        développement web.
+        web optimisés et fonctionnels.
+      </p>
+      <p className="text-white my-4">
+        Ces compétences et stacks technologiques constituent une base solide
+        pour un développeur web junior. <br /> Ils couvrent à la fois les
+        aspects de conception et de développement, ainsi que la gestion de
+        projet, ce qui me permettra de travailler efficacement sur des projets
+        web et de continuer à m'améliorer dans le domaine du développement web.
       </p>
       {loading ? (
         <div>Chargement en cours...</div>
       ) : (
-        // <div>
-        //   {skills.length > 0 &&
-        //     skills.map(
-        //       (skill, index) =>
-        //         skill.length > 0 && (
-        //           <div key={index}>
-        //             <Skills skills={skill} />
-        //             <p className="text-white">
-        //               {getSkillDescription(skill[0].category)}
-        //             </p>
-        //           </div>
-        //         )
-        //     )}
-        // </div>
-
         <div>
           {skills.map((skill, index) => (
             <Skills key={index} skills={skill} />

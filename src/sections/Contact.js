@@ -163,7 +163,10 @@ export default function Contact() {
                     aria-hidden="true"
                   />
                   <span className="ml-3">
-                    <a href="mailto:katleen.portfolio@gmail.com">
+                    <a
+                      href="mailto:katleen.portfolio@gmail.com"
+                      className="hover:text-white"
+                    >
                       katleen.portfolio
                       <span className="hidden md:inline">@gmail.com</span>
                     </a>

@@ -41,19 +41,21 @@ export const Skill = () => {
 
   return (
     <section id="skills" className=" bg-secondary py-10 px-4">
-      <h2 className=" text-white text-center mb-8">Mes compétences</h2>
-      <p className="text-white">
-        Durant ma formation intensive de 6 mois, je suis monté en compétence
-        dans divers outils et technologies, me permettant de concevoir des sites
-        web optimisés et fonctionnels.
-      </p>
-      <p className="text-white my-4">
-        Ces compétences et stacks technologiques constituent une base solide
-        pour un développeur web junior. <br /> Ils couvrent à la fois les
-        aspects de conception et de développement, ainsi que la gestion de
-        projet, ce qui me permettra de travailler efficacement sur des projets
-        web et de continuer à m'améliorer dans le domaine du développement web.
-      </p>
+      <h2 className=" text-white text-center mb-12">Mes compétences</h2>
+      <div className="px-16">
+        <p className="text-white">
+          Dans le cadre de ma reconversion professionnelle, j'ai consacré du
+          temps à me former et à monter en compétence dans un éventail varié
+          d'outils et de technologies essentiels au développement web.
+        </p>
+        <p className="text-white my-2">
+          Cette formation englobe des aspects de conception, de développement et
+          de gestion de projet, ce qui me permet de concevoir des sites web
+          optimisés et fonctionnels. Ces compétences me préparent à travailler
+          efficacement sur une variété de projets web tout en continuant à
+          progresser dans le domaine du développement web.
+        </p>
+      </div>
       {loading ? (
         <div>Chargement en cours...</div>
       ) : (

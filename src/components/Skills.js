@@ -9,7 +9,7 @@ const Skills = ({ skills }) => {
             <div className="w-full max-h-[235px]">
               <img
                 className="object-cover w-[352px] h-[235px]"
-                src="https://place-hold.it/360"
+                src={skill.imageUrl}
                 alt={skill.title}
               />
             </div>

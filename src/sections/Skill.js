@@ -45,7 +45,7 @@ export const Skill = () => {
       {loading ? (
         <div>Chargement en cours...</div>
       ) : (
-        <div className="md:flex md:flex-wrap md:justify-evenly xl:px-8">
+        <div className="flex flex-col items-center md:flex-row md:flex-wrap md:justify-evenly xl:px-8">
           {skills.map((skill, index) => (
             <Skills key={index} skills={skill} />
           ))}

@@ -24,7 +24,7 @@ const LearnDuration = ({ startDate }) => {
           years > 0 && <span> {years} ans</span>
         )}
         {months > 0 && <span> {months} mois</span>}
-        {days > 0 && days < 2 ? (
+        {days >= 0 && days < 2 ? (
           <span> {days} jour</span>
         ) : (
           <span> {days} jours</span>

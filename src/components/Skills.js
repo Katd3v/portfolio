@@ -3,7 +3,6 @@ import React from "react";
 const Skills = ({ skills }) => {
   return (
     <div className="my-12 flex justify-center flex-wrap">
-      {/* {skills.map((skill, index) => ( */}
       <div className="max-w-[300px] md:h-[440px] xl:max-w-[352px] bg-primary rounded-xl overflow-hidden shadow-md">
         <div className="w-full max-h-[235px]">
           <img
@@ -17,7 +16,6 @@ const Skills = ({ skills }) => {
           <p className="">{skills.description}</p>
         </div>
       </div>
-      {/* ))} */}
     </div>
   );
 };

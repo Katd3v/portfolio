@@ -19,11 +19,11 @@ export default function Navbar() {
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
       >
-        <a href="/" className="-m-1.5 p-1.5">
+        <a href="/">
           <span className="sr-only">Portfolio de Katleen Sorhaindo</span>
           <img
-            className="h-12 w-auto rounded-full"
-            src="/logo.jpeg"
+            className="h-12 rounded-xl"
+            src="/logo.webp"
             alt="Logo avec initiales KS"
           />
         </a>

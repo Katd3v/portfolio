@@ -20,13 +20,13 @@ const LearnDuration = ({ startDate }) => {
       <p className="text-center font-bold">
         {" "}
         {years > 0 && years < 2 ? (
-          <span> {years} an</span>
+          <span> {years} an </span>
         ) : (
           years > 0 && <span> {years} ans</span>
         )}
         {months > 0 && <span> {months} mois</span>}
         {days > 0 && days < 2 ? (
-          <span> {days} jour</span>
+          <span> {days} jour </span>
         ) : (
           days > 1 && <span> {days} jours</span>
         )}

@@ -25,7 +25,7 @@ export const Cards = ({ project }) => {
           <div className="w-full relative flex items-center gap-x-4">
             <a href={project.github} target="_blank" rel="noreferrer">
               <img
-                src="assets/img/github-logo.png"
+                src="assets/img/github-logo.webp"
                 alt="logo github qui amène vers le projet github"
                 className="h-10 rounded-full bg-gray-50"
               />
@@ -33,7 +33,7 @@ export const Cards = ({ project }) => {
             {project.pageUrl.length > 0 && (
               <a href={project.pageUrl} target="_blank" rel="noreferrer">
                 <img
-                  src="/assets/img/website-logo.png"
+                  src="/assets/img/website-logo.webp"
                   alt="logo site internet qui amène vers le projet"
                   className="h-10 rounded-full bg-gray-50"
                 />

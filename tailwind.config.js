@@ -11,7 +11,11 @@ module.exports = {
     fontFamily: {
       sans: ["Montserrat", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        pattern: "url('img/bg_pattern.webp')",
+      },
+    },
   },
   plugins: [require("@tailwindcss/forms")],
 };

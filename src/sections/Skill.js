@@ -24,7 +24,9 @@ export const Skill = () => {
 
   return (
     <section id="skills" className=" bg-primary py-10 px-4">
-      <h2 className=" text-secondary text-center mb-12">Mes compétences</h2>
+      <h2 className=" text-secondary text-center mb-12 lg:text-5xl">
+        Mes compétences
+      </h2>
       <div className="px-8 md:px-16">
         <p className="text-secondary mb-6">
           Dans le cadre de ma reconversion professionnelle, j'ai consacré du

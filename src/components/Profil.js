@@ -9,7 +9,7 @@ export const Profil = () => {
         alt="profil de Katleen SORHAINDO"
       />
       <div className="xl:flex xl:flex-col xl:justify-center mx-4">
-        <h2 className="text-secondary text-center my-8 xl:my-6 xl:text-left">
+        <h2 className="text-secondary text-center my-8 xl:my-6 xl:text-left lg:text-5xl">
           Qui suis-je ?
         </h2>
         <div className="flex flex-col">

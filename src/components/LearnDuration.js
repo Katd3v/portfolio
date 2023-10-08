@@ -15,7 +15,7 @@ const LearnDuration = ({ startDate }) => {
   const days = duration.days();
 
   return (
-    <div>
+    <div className="py-4">
       <p>
         Temps de pratique :{" "}
         {years > 0 && years < 2 ? (
@@ -24,10 +24,10 @@ const LearnDuration = ({ startDate }) => {
           years > 0 && <span> {years} ans</span>
         )}
         {months > 0 && <span> {months} mois</span>}
-        {days >= 0 && days < 2 ? (
+        {days > 0 && days < 2 ? (
           <span> {days} jour</span>
         ) : (
-          <span> {days} jours</span>
+          days > 1 && <span> {days} jours</span>
         )}
       </p>
     </div>

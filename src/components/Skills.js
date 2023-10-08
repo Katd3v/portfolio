@@ -16,16 +16,15 @@ const Skills = ({ skills }) => {
   };
 
   return (
-    // <div className="my-12 flex justify-center flex-wrap">
-    <div className="my-10 relative max-w-[300px] md:h-[440px] xl:max-w-[352px] bg-white rounded-xl overflow-hidden shadow-md">
-      <div className="w-full max-h-[235px] overflow-hidden">
+    <div className="my-10 relative max-w-[300px] md:h-[450px] xl:max-w-[352px] rounded-xl overflow-hidden shadow-md">
+      <div className="w-full max-h-[234px] overflow-hidden">
         <img
-          className="object-cover w-[352px] h-[235px] transition ease-in-out duration-500 hover:scale-110 hover:brightness-90"
+          className="object-cover w-[352px] h-[234px] transition ease-in-out duration-500 hover:scale-110 hover:brightness-90"
           src={skills.imageUrl}
           alt={skills.title}
         />
       </div>
-      <div className="p-6">
+      <div className="p-6 bg-white">
         <div>
           <h3 className="font-bold text-2xl text-secondary">{skills.title}</h3>
           <LearnDuration startDate={skills.date} />
@@ -49,7 +48,6 @@ const Skills = ({ skills }) => {
         <p className="text-secondary">{skills.description}</p>
       </div>
     </div>
-    // </div>
   );
 };
 

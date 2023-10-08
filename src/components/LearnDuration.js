@@ -16,8 +16,8 @@ const LearnDuration = ({ startDate }) => {
 
   return (
     <div>
-      <p className="text-center">Temps de pratique :</p>
-      <p className="text-center font-bold">
+      <p className="text-center text-secondary">Temps de pratique :</p>
+      <p className="text-center font-bold text-secondary">
         {" "}
         {years > 0 && years < 2 ? (
           <span> {years} an </span>

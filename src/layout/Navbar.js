@@ -62,7 +62,7 @@ export default function Navbar() {
               <span className="sr-only">Portfolio de Katleen Sorhaindo</span>
               <img
                 className="h-8 w-auto rounded-full"
-                src="/logo.jpeg"
+                src="/logo.webp"
                 alt="Logo avec initiales KS"
               />
             </a>

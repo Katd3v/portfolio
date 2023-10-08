@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 
 const Hero = () => {
   const heroStyle = {
-    backgroundImage: `url("/assets/img/background-hero.jpg")`,
+    backgroundImage: `url("/assets/img/background-hero.webp")`,
     backgroundSize: "cover",
   };
 

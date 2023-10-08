@@ -1,6 +1,5 @@
 import React from "react";
 import LearnDuration from "./LearnDuration";
-import moment from "moment";
 
 const Skills = ({ skills }) => {
   const handleOpen = () => {

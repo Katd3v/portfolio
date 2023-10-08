@@ -8,7 +8,7 @@ export const Projects = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/projects")
+      .get(`${process.env.REACT_APP_ENDPOINT}/projects`)
       .then((response) => {
         setProjects(response.data);
         setLoading(false);

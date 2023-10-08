@@ -8,7 +8,7 @@ export const Skill = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/skills")
+      .get(`${process.env.REACT_APP_ENDPOINT}/skills`)
       .then((response) => {
         setSkills(response.data);
         setLoading(false);

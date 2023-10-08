@@ -42,8 +42,8 @@ export const Cards = ({ project }) => {
           </div>
           <div>
             <div className="text-sm leading-6">
-              <ul className="flex justify-end">
-                <div className="flex w-full gap-x-2">
+              <div className="flex justify-end">
+                <ul className="flex w-full gap-x-2">
                   {project.languages.map((language, index) => (
                     <li key={index} className="">
                       <img
@@ -53,8 +53,8 @@ export const Cards = ({ project }) => {
                       />
                     </li>
                   ))}
-                </div>
-              </ul>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

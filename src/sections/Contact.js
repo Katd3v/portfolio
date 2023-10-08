@@ -29,7 +29,7 @@ export default function Contact() {
 
     try {
       // Envoyer les données du formulaire au backend
-      await axios.post("http://localhost:4000/mail", formData);
+      await axios.post(`${process.env.REACT_APP_ENDPOINT}/mail`, formData);
       // Réinitialiser les champs du formulaire après la soumission réussie
       setFormData(defaultFormData);
 

@@ -40,7 +40,7 @@ const Skills = ({ skills }) => {
       </div>
       <div
         id="list"
-        className="transition-all duration-500 transform translate-y-[100%] absolute top-0 left-0 right-0 bottom-0 bg-primary text-white font-bold py-2 px-4 rounded"
+        className="transition-all duration-500 transform translate-y-[100%] absolute top-0 left-0 right-0 bottom-0 bg-white text-secondary font-bold py-2 px-4 rounded"
       >
         <div className="text-right cursor-pointer" onClick={handleClose}>
           X

@@ -23,20 +23,20 @@ export const Skill = () => {
   }, []);
 
   return (
-    <section id="skills" className=" bg-secondary py-10 px-4">
-      <h2 className=" text-white text-center mb-12">Mes compétences</h2>
+    <section id="skills" className=" bg-primary py-10 px-4">
+      <h2 className=" text-secondary text-center mb-12">Mes compétences</h2>
       <div className="px-8 md:px-16">
-        <p className="text-white mb-6">
+        <p className="text-secondary mb-6">
           Dans le cadre de ma reconversion professionnelle, j'ai consacré du
           temps à me former et à monter en compétence dans un éventail varié
           d'outils et de technologies essentiels au développement web.
         </p>
-        <p className="text-white my-4">
+        <p className="text-secondary my-4">
           Cette formation englobe des aspects de conception, de développement et
           de gestion de projet, ce qui me permet de concevoir des sites web
           optimisés et fonctionnels.
         </p>
-        <p className="text-white my-6">
+        <p className="text-secondary my-6">
           Ces compétences me préparent à travailler efficacement sur une variété
           de projets web tout en continuant à progresser dans le domaine du
           développement web.

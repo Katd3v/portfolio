@@ -9,27 +9,32 @@ export const Profil = () => {
         alt="profil de Katleen SORHAINDO"
       />
       <div className="xl:flex xl:flex-col xl:justify-center mx-4">
-        <h2 className="text-secondary my-8 xl:mt-4">Qui suis-je ?</h2>
+        <h2 className="text-secondary my-8 xl:my-6">Qui suis-je ?</h2>
         <div className="flex flex-col">
           <p>
             Je suis un développeur web en reconversion professionnelle, ayant
             récemment obtenu la certification professionnelle « Développeur
-            intégrateur web » de niveau 5 (bac +2). Cette transition réussie
-            s'est déroulée sur une période de six mois, grâce à une formation
-            intensive à l'école OpenClassrooms.
+            intégrateur web » de niveau 5 (bac +2) après une transition réussie
+            qui s'est déroulée sur une période d'un an.
           </p>
           <p className="my-4">
-            Mon parcours professionnel précédent m'a enseigné l'importance de la
-            rigueur, de l'efficacité et de la persévérance, des qualités que
-            j'ai pu transférer dans mon nouveau domaine. J'ai également
-            développé une forte capacité d'adaptation face aux défis, une
-            qualité que je considère essentielle dans le domaine du
-            développement web en constante évolution.
+            Mon parcours professionnel précédent au sein d'un service public m'a
+            apporté des compétences solides en termes de rigueur, d'efficacité
+            et de persévérance, que j'ai pu transférer avec succès dans le
+            domaine du développement web.
           </p>
           <p>
-            Ma décision de me lancer dans une carrière de développeur web
-            découle de ma passion pour la création, l'innovation technologique
-            et le désir constant d'apprendre et de relever de nouveaux défis.
+            J'ai consacré de nombreuses heures à des formations en ligne,
+            notamment avec freeCodeCamp, puis j'ai suivi pendant six mois le
+            programme intensif de l'école OpenClassrooms, ce qui m'a permis de
+            consolider mes compétences techniques et de me qualifier en tant que
+            développeur web junior.
+          </p>
+          <p className="my-4">
+            Aujourd'hui, je suis prêt à mettre en pratique ces compétences
+            nouvellement acquises et à contribuer au monde du développement web
+            avec mon enthousiasme, ma créativité et ma volonté constante
+            d'améliorer mes compétences.
           </p>
         </div>
       </div>

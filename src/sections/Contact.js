@@ -29,7 +29,7 @@ export default function Contact() {
 
     try {
       // Envoyer les données du formulaire au backend
-      await axios.post("http://localhost:4000/mail", formData);
+      await axios.post(`${process.env.REACT_APP_ENDPOINT}/mail`, formData);
       // Réinitialiser les champs du formulaire après la soumission réussie
       setFormData(defaultFormData);
 
@@ -221,7 +221,7 @@ export default function Contact() {
                       onChange={handleChange}
                       required
                       autoComplete="given-name"
-                      className="block w-full rounded-md border-primary px-4 py-3 text-gray-900 shadow-sm shadow-primary focus:border-secondary focus:ring-secondary"
+                      className="block w-full rounded-md border border-solid border-[#ddd0c8] px-4 py-3 text-gray-900 shadow-sm shadow-[#ddd0c8] focus:border-secondary focus:ring-secondary"
                     />
                   </div>
                 </div>
@@ -241,7 +241,7 @@ export default function Contact() {
                       onChange={handleChange}
                       required
                       autoComplete="family-name"
-                      className="block w-full rounded-md border-primary px-4 py-3 text-gray-900 shadow-sm shadow-primary focus:border-secondary focus:ring-secondary"
+                      className="block w-full rounded-md border border-solid border-[#ddd0c8] px-4 py-3 text-gray-900 shadow-sm shadow-[#ddd0c8] focus:border-secondary focus:ring-secondary"
                     />
                   </div>
                 </div>
@@ -261,7 +261,7 @@ export default function Contact() {
                       onChange={handleChange}
                       required
                       autoComplete="email"
-                      className="block w-full rounded-md border-primary px-4 py-3 text-gray-900 shadow-sm shadow-primary focus:border-secondary focus:ring-secondary"
+                      className="block w-full rounded-md border border-solid border-[#ddd0c8] px-4 py-3 text-gray-900 shadow-sm shadow-[#ddd0c8] focus:border-secondary focus:ring-secondary"
                     />
                   </div>
                 </div>
@@ -285,7 +285,7 @@ export default function Contact() {
                       value={formData.phone}
                       onChange={handleChange}
                       autoComplete="tel"
-                      className="block w-full rounded-md border-primary px-4 py-3 text-gray-900 shadow-sm shadow-primary focus:border-secondary focus:ring-secondary"
+                      className="block w-full rounded-md border border-solid border-[#ddd0c8] px-4 py-3 text-gray-900 shadow-sm shadow-[#ddd0c8] focus:border-secondary focus:ring-secondary"
                       aria-describedby="phone-optional"
                     />
                   </div>
@@ -305,7 +305,7 @@ export default function Contact() {
                       value={formData.subject}
                       onChange={handleChange}
                       required
-                      className="block w-full rounded-md border-primary px-4 py-3 text-gray-900 shadow-sm shadow-primary focus:border-secondary focus:ring-secondary"
+                      className="block w-full rounded-md border border-solid border-[#ddd0c8] px-4 py-3 text-gray-900 shadow-sm shadow-[#ddd0c8] focus:border-secondary focus:ring-secondary"
                     />
                   </div>
                 </div>
@@ -329,7 +329,7 @@ export default function Contact() {
                       value={formData.message}
                       onChange={handleChange}
                       required
-                      className="block w-full rounded-md border-primary px-4 py-3 text-gray-900 shadow-sm shadow-primary focus:border-secondary focus:ring-secondary"
+                      className="block w-full rounded-md border border-solid border-[#ddd0c8] px-4 py-3 text-gray-900 shadow-sm shadow-[#ddd0c8] focus:border-secondary focus:ring-secondary"
                       aria-describedby="message-max"
                     />
                   </div>

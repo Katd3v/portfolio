@@ -14,7 +14,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-primary left-0 right-0">
+    <header className="bg-primary left-0 right-0 fixed z-50">
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
@@ -42,7 +42,7 @@ export default function Navbar() {
             <a
               key={item.name}
               href={item.href}
-              className="text-sm font-semibold leading-6 text-secondary"
+              className="text-sm font-semibold leading-6 text-secondary md:text-base"
             >
               {item.name}
             </a>
@@ -56,7 +56,7 @@ export default function Navbar() {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-primary px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-primary px-6 py-6 sm:max-w-sm">
           <div className="flex items-center justify-between">
             <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Portfolio de Katleen Sorhaindo</span>

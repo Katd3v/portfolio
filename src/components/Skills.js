@@ -16,7 +16,7 @@ const Skills = ({ skills }) => {
   };
 
   return (
-    <div className="my-10 relative max-w-[300px] md:h-[450px] xl:max-w-[352px] rounded-xl overflow-hidden shadow-md">
+    <div className="my-6 mx-4 relative max-w-[300px] md:h-[450px] xl:max-w-[352px] rounded-xl overflow-hidden shadow-md">
       <div className="w-full max-h-[234px] overflow-hidden">
         <img
           className="object-cover w-[352px] h-[234px] transition ease-in-out duration-500 hover:scale-110 hover:brightness-90"
@@ -29,7 +29,7 @@ const Skills = ({ skills }) => {
           <h3 className="font-bold text-2xl text-secondary">{skills.title}</h3>
           <LearnDuration startDate={skills.date} />
         </div>
-        <div>
+        <div className="flex justify-center">
           <button
             className="bg-secondary text-white font-bold py-2 px-4 rounded mt-4"
             onClick={handleOpen}

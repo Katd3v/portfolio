@@ -6,7 +6,7 @@ export const Cards = ({ project }) => {
       <div className="relative aspect-square w-full md:w-96 lg:w-80 lg:shrink-0 overflow-hidden rounded-2xl object- shadow-sm shadow-secondary md:mx-auto">
         <a href={project.github} target="_blank" rel="noreferrer">
           <img
-            src={project.imageUrl}
+            src={`${process.env.REACT_APP_ENDPOINT}${project.imageUrl}`}
             alt={`miniature représentant le projet ${project.title}`}
             className="absolute inset-0 h-full w-full rounded-2xl shadow-sm shadow-secondary hover:scale-125 transform transition-transform duration-500"
           />
@@ -48,7 +48,7 @@ export const Cards = ({ project }) => {
                     <li key={index} className="">
                       <img
                         className="max-h-16 w-full"
-                        src={language}
+                        src={`${process.env.REACT_APP_ENDPOINT}${language}`}
                         alt="logo des compétences"
                       />
                     </li>

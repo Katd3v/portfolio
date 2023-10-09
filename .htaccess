@@ -1,0 +1,30 @@
+# Activer le module de réécriture d'URL
+
+RewriteEngine On
+
+# Rediriger HTTP vers HTTPS
+
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Politique de sécurité des contenus
+
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "DENY"
+    Header always set Referrer-Policy "same-origin"
+    Header set X-XSS-Protection "1; mode=block"
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+    Header set Permissions-Policy "accelerometer=(), geolocation=(), fullscreen=('self'), ambient-light-sensor=(), autoplay=(), battery=(), camera=(), display-capture=()"
+    Header set Content-Security-Policy "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self';"
+</IfModule>
+
+# Empêcher l'accès aux fichiers sensibles
+
+<FilesMatch "(^\.htaccess|\.env|\.git|\.DS_Store|\.htpasswd)">
+Deny from all
+</FilesMatch>
+
+# Empêcher l'affichage des listes de répertoires
+
+Options -Indexes

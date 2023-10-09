@@ -16,7 +16,7 @@ const Skills = ({ skills }) => {
       <div className="w-full max-h-[234px] overflow-hidden">
         <img
           className="object-cover w-[352px] h-[234px] transition ease-in-out duration-500 hover:scale-110 hover:brightness-90"
-          src={skills.imageUrl}
+          src={`${process.env.REACT_APP_ENDPOINT}${skills.imageUrl}`}
           alt={skills.title}
         />
       </div>

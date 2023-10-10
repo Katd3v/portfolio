@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { EnvelopeIcon } from "@heroicons/react/24/outline";
 
@@ -14,6 +14,13 @@ const defaultFormData = {
 
 export default function Contact() {
   const [formData, setFormData] = useState(defaultFormData);
+  const [sendEmail, setSendEmail] = useState(false);
+
+  useEffect(() => {
+    if (sendEmail) {
+      setTimeout(() => setSendEmail(false), 3000);
+    }
+  }, [sendEmail]);
 
   //fonction qui permet de mettre à jour l'état du formulaire en fonction des changements dans les champs de saisie
   const handleChange = (event) => {
@@ -32,6 +39,7 @@ export default function Contact() {
       await axios.post(`${process.env.REACT_APP_ENDPOINT}/mail`, formData);
       // Réinitialiser les champs du formulaire après la soumission réussie
       setFormData(defaultFormData);
+      setSendEmail(true);
 
       console.log("Formulaire envoyé avec succès !");
     } catch (error) {
@@ -337,12 +345,15 @@ export default function Contact() {
                 <div className="sm:col-span-2 sm:flex sm:justify-end">
                   <button
                     type="submit"
-                    className="mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
+                    className="mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-secondary px-6 py-3 text-base font-medium text-white shadow-sm focus:outline-none sm:w-auto"
                   >
                     Envoyer
                   </button>
                 </div>
               </form>
+              <div className="flex justify-center text-md font-bold text-[#d35400] mt-4">
+                {sendEmail && <p>Votre message a bien été envoyé</p>}
+              </div>
             </div>
           </div>
         </div>

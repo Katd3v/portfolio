@@ -1,5 +1,6 @@
 import React from "react";
-import Typewriter from "typewriter-effect";
+import TypewriterTitle from "../components/TypewriterTitle";
+// import Typewriter from "typewriter-effect";
 
 const Hero = () => {
   const heroStyle = {
@@ -13,24 +14,14 @@ const Hero = () => {
       style={heroStyle}
     >
       <h1 className="mt-16 text-center text-3xl text-secondary md:text-6xl">
-        Bonjour, <br /> Je suis{" "}
-        <span>
-          <Typewriter
-            onInit={(typewriter) => {
-              typewriter
-                .typeString("Katleen")
-                .pauseFor(1000)
-                .deleteAll()
-                .typeString("Développeur web")
-                .pauseFor(1000)
-                .start();
-            }}
-            options={{
-              loop: true, //Répète l'animation en boucle
-              autoStart: true, //Démarre l'animation automatiquement
-            }}
-          />
-        </span>
+        Bonjour, <br /> Je suis <br />
+        <TypewriterTitle
+          title="span"
+          cls=""
+          words={["Katleen", "Développeur web"]}
+          typingSpeed={110}
+          deletingSpeed={100}
+        />
       </h1>
     </section>
   );
